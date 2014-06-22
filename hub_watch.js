@@ -1,13 +1,17 @@
+Projects = new Meteor.Collection("projects");
+
 if (Meteor.isClient) {
-  Template.hello.greeting = function () {
-    return "Welcome to hub_watch.";
-  };
+
+  Template.hello.projects = function () {
+    return Projects.find()
+  }
 
   Template.hello.events({
-    'click input': function () {
-      // template data, if any, is available in 'this'
-      if (typeof console !== 'undefined')
-        console.log("You pressed the button");
+    'keydown #new-project': function (event) {
+      if (event.keyCode == 13 && event.target.value) {
+        Projects.insert({name: event.target.value})
+        event.target.value = ''
+      }
     }
   });
 }
