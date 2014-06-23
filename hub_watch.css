@@ -2,3 +2,9 @@
 .padding-0-50{
     padding: 0 50px;
 }
+.hide{
+    display: none;
+}
+#projectList i.icon-cancel{
+    cursor: pointer;
+}

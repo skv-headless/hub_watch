@@ -23,8 +23,14 @@
 </body>
 
 <template name="hello">
-  {{#each projects}}
-    <p>{{name}}</p>
-  {{/each}}
+  <ul id="projectList">
+    {{#each projects}}
+      <li>
+        <span>{{name}}</span>
+        <i class="icon-cancel hide"></i>
+        <br>
+      </li>
+    {{/each}}
+  </ul>
   <input type="text" id="new-project" placeholder="add project" />
 </template>
