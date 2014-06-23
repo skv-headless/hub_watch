@@ -1,0 +1,15 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "metro-ui2": {}
+    },
+    "packages": {
+      "metro-ui2": {
+        "git": "https://github.com/chrismbeckett/meteor-metro-ui2.git",
+        "tag": "v0.1.0",
+        "commit": "afbbdf2a643af16630feb36cbca537b839203117"
+      }
+    }
+  }
+}
