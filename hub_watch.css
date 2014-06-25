@@ -8,3 +8,6 @@
 #projectList i.icon-cancel{
     cursor: pointer;
 }
+#projectList .active{
+    color: red;
+}
