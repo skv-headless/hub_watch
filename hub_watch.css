@@ -11,3 +11,12 @@
 #projectList .active{
     color: red;
 }
+.issue-open{
+    background-color: #6cc644;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 0 5px;
+}
+.event{
+   margin: 5px 0;
+}

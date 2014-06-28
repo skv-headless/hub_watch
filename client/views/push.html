@@ -1,0 +1,7 @@
+<template name="push">
+  <a target="_blank" href="{{commitUrl}}">
+    {{pluralize this.payload.size 'commit'}}
+  </a>
+  was pushed
+  to {{branch}}
+</template>

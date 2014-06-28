@@ -1,2 +1,8 @@
+<!--TODO sow title-->
 <template name="issue_open">
+  Issue
+  <a target="_blank" href="{{this.payload.issue.html_url}}">
+  #{{this.payload.issue.number}}
+  </a>
+  was opened
 </template>

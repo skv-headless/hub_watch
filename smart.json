@@ -1,5 +1,6 @@
 {
   "packages": {
-    "metro-ui2": {}
+    "metro-ui2": {},
+    "inflectionizer": {}
   }
 }

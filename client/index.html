@@ -1,0 +1,51 @@
+<head>
+  <title>hub_watch</title>
+</head>
+
+<body>
+  <div class="metro">
+    <div class="container padding-0-50 grid">
+      <header class="margin20 nrm nlm">
+        <div class="clearfix">
+          <a class="place-left" href="#" title="">
+            <h2>Hub watch</h2>
+          </a>
+          <div class="place-right">
+            {{> loginButtons}}
+          </div>
+        </div>
+      </header>
+      <div class="main-content clearfix row">
+        <div class="span4">
+          {{> projects }}
+        </div>
+        <div class="span8">
+          {{> project_events }}
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<template name="projects">
+  <ul id="projectList">
+    {{#each projects}}
+      <li class="{{active}}">
+        <span class="projectSelect">{{name}}</span>
+        <i class="icon-cancel hide"></i>
+        <br>
+      </li>
+    {{/each}}
+  </ul>
+  <input type="text" id="new-project" placeholder="add project" />
+</template>
+
+<template name="project_events">
+  <ul>
+    {{#each currentProjectEvents}}
+      <li class="event">
+        {{> eventTemplate}}
+      </li>
+    {{/each}}
+  </ul>
+</template>

@@ -2,13 +2,19 @@
   "meteor": {},
   "dependencies": {
     "basePackages": {
-      "metro-ui2": {}
+      "metro-ui2": {},
+      "inflectionizer": {}
     },
     "packages": {
       "metro-ui2": {
         "git": "https://github.com/chrismbeckett/meteor-metro-ui2.git",
         "tag": "v0.1.0",
         "commit": "afbbdf2a643af16630feb36cbca537b839203117"
+      },
+      "inflectionizer": {
+        "git": "https://github.com/Differential/inflectionizer.git",
+        "tag": "v0.2.0",
+        "commit": "03d91efe8eb9461e5752d66de560e6c9db9bcce0"
       }
     }
   }
